@@ -48,7 +48,12 @@ my_mets |>
 
 ### Exercise 3
 
-...
+```{r}
+mets_ben <- Teams |>
+  dplyr::select(yearID, G, teamID,R, RA, W, L) |>
+  dplyr::filter(teamID == "NYN" & yearID %in% 2004:2012)
+mets_ben
+```
 
 ### Exercise 4
 
